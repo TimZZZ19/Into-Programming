@@ -18,7 +18,6 @@ public class TreasureMap{
 		int maxCol = end.getCol();
 		
 		int total = 0;
-
 		for(int i = minRow; i <= maxRow; i++){
 			for(int j = minCol; j <= maxCol; j++){
 				if (map[i][j]){
