@@ -8,8 +8,10 @@ class Course:
 
     # 通用功能：显示课程基本信息
     def show_info(self):
+        print("\n==================== 课程信息 ====================\n")
         print(f"【课程类型】{self.course_type} | 科目：{self.subject}")
-        print(f"总课时：{self.total_hours}小时 | 每节长：{self.lesson_length}分钟")
+        print(f" 总课时：{self.total_hours}小时 | 每节长：{self.lesson_length}分钟")
+        print("\n==================================================\n")
 
 # 子类 1：一对一课程（继承父类）
 class OneOnOneCourse(Course):
@@ -30,15 +32,13 @@ def run_course():
     english_course = OneOnOneCourse("一对一", "英语", 20, 60)
     computer_course = GroupCourse("班课", "计算机", 30, 90)
 
-    print("===== 课程系统启动 =====")
-
     # 英语课
     english_course.show_info()
-    english_course.create_lesson(
-        note="过去式语法讲解",
-        homework="完成练习册 P10-P12",
-        summary="学生掌握了一般过去式的用法"
-    )
+    # english_course.create_lesson(
+    #     note="过去式语法讲解",
+    #     homework="完成练习册 P10-P12",
+    #     summary="学生掌握了一般过去式的用法"
+    # )
 
     # 计算机课
     computer_course.show_info()
