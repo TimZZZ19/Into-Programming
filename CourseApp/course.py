@@ -27,6 +27,9 @@ class GroupCourse(Course):
         print(f"\n📢 班课公告：本次{self.subject}班课准时开始，共{self.total_hours}小时！")
 
 # 模拟课程运行
+# TODO: 接下来的思路是从前端的角度出发，思考本程序（业务逻辑层）是如何
+#       和前段交互的，牵扯到哪些具体操作和流程。
+
 def run_course():
     # 创建课程对象
     english_course = OneOnOneCourse("一对一", "英语", 20, 60)
